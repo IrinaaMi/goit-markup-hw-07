@@ -19,8 +19,10 @@
     <!-- Header -->
     <header class="main-header-container">
         <div class="header-container container">
-            <nav class="header-nav-links">
-                <a href="./index.html" class="link logo main-page-logo">Web<span class="logo-part">Studio</span></a>
+            <a href="./index.html" class="link logo main-page-logo">Web<span class="logo-part">Studio</span></a>
+
+            <nav>
+
                 <ul class="list header-nav-links">
                     <li>
                         <a href="./index.html" class="link header-nav-item active">Studio</a>
@@ -41,6 +43,69 @@
                     </li>
                 </ul>
             </address>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu-svg" width="32" height="32" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+
+            <div class="menu-container js-menu-container" id="mobile-menu">
+
+                <button type="button" class="menu-toggle js-close-menu"> <svg class="" width="8" height="8">
+                        <use href="./images/icons.svg#close-black"></use>
+                    </svg></button>
+                <ul class="list mobile-menu-part">
+                    <li class="mobile-menu-nav-items">
+                        <a class="link mobile-link" href="">Studio</a>
+                    </li>
+                    <li class="mobile-menu-nav-items">
+                        <a class="link mobile-link" href="">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu-nav-items">
+                        <a class="link mobile-link" href="">Contacts</a></li>
+                </ul>
+                <ul class="list mobile-contacts">
+                    <li class="mobile-menu-contacts">
+                        <a href="tel:+11000111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-menu-mail">
+                        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-socials list ">
+                    <li>
+                        <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
+                            <svg class="social-icon" width="16" height="16">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter icon">
+                            <svg class="social-icon" width="16" height="16">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook icon">
+                            <svg class="social-icon" width="16" height="16">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="Linkein icon">
+                            <svg class="social-icon" width="16" height="16">
+                                <use href="./images/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- Hero -->
@@ -54,7 +119,7 @@
             </div>
         </section>
         <!-- About us -->
-        <section class="section about-us-section">
+        <section class="section">
             <div class="container">
                 <h2 hidden class="main-page-title">About us</h2>
                 <ul class="list about-us">
@@ -106,7 +171,7 @@
             </div>
         </section>
         <!-- What are we doing -->
-        <section class="section what-are-we-doing-section">
+        <section class=" what-are-we-doing-section">
             <div class="container">
                 <h2 class="title">What are we doing</h2>
                 <ul class="list what-are-we-doing-list">
@@ -127,9 +192,9 @@
             <div class="container">
                 <h2 class="title team-title">Our Team</h2>
                 <ul class="list team-list-cards">
-                    <li class="team-list-item card-set-item">
+                    <li class="team-list-item">
                         <img src="./images/our-team/1.jpg" alt="man with beard" width="264" />
-                        <div class="team-name-item">
+                        <div>
                             <h3 class="team-member-name">Mark Guerrero</h3>
                             <p class="team-members-descr">Product Designer</p>
                             <ul class="socials list">
@@ -282,7 +347,7 @@
         <section class="customers-icons-section">
             <div class="container">
                 <h2 class="customers-main-logo">Customers</h2>
-                <ul class="customers-items-list list">
+                <ul class="customers-list list">
                     <li class="customers-list-item">
                         <a href="" target="_blank" rel="noopener noreferrer" class="customers-link-item">
                             <svg class="customers-icon-svg" width="104" height="56">
@@ -442,6 +507,8 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
