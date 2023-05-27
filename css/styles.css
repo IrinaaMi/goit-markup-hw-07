@@ -660,6 +660,12 @@
             border-radius: 0px 0px 4px 4px;
         }
         
+        @media only screen and (max-width: 767px) {
+            .team-list-item {
+                margin-top: 72px;
+            }
+        }
+        
         .team-member-name {
             text-align: center;
             font-weight: 500;
@@ -1394,11 +1400,6 @@
             justify-content: center;
             text-align: center;
         }
-        /* @media only screen and (min-width: 480px) {
-            .mobile-submit-button {
-                margin-left: 95px;
-            }
-        } */
         
         .send-modal-btn:hover,
         .send-modal-btn:focus {
