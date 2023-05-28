@@ -388,7 +388,7 @@
         @media only screen and (min-width: 769px) {
             .main-hero-section {
                 max-width: 1440px;
-                padding: 188px 0;
+                padding: 112px 0;
                 background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg)
             }
             @media (min-device-pixel-ratio: 2),
@@ -401,7 +401,14 @@
             }
         }
         
+        @media only screen and (min-width: 1158px) {
+            .main-hero-section {
+                padding: 188px 0;
+            }
+        }
+        
         .main-hero-title {
+            max-width: 320px;
             font-weight: 700;
             font-size: 36px;
             line-height: 1.11;
@@ -415,6 +422,7 @@
         
         @media only screen and (min-width: 768px) {
             .main-hero-title {
+                max-width: 496px;
                 font-size: 56px;
                 line-height: 1.07;
                 margin-bottom: 36px;
@@ -423,8 +431,6 @@
         
         @media only screen and (min-width: 1158px) {
             .main-hero-title {
-                font-size: 56px;
-                line-height: 1.07;
                 margin-bottom: 48px;
             }
         }
@@ -630,6 +636,7 @@
         }
         
         .team-list-cards {
+            margin-top: 72px;
             display: flex;
             flex-wrap: wrap;
             text-align: center;
@@ -638,16 +645,12 @@
         
         @media only screen and (min-width: 768px) and (max-width: 1157px) {
             .team-list-cards {
-                display: flex;
-                flex-wrap: wrap;
                 gap: 64px 24px;
-                margin-top: 72px;
             }
         }
         
         @media only screen and (min-width: 1158px) {
             .team-list-cards {
-                display: flex;
                 gap: 24px;
             }
         }
@@ -844,7 +847,7 @@
         .footer {
             background-color: var(--bg-dark-color);
             font-family: var(--primary-font);
-            padding: 96px 15px;
+            padding: 96px 0;
             display: flex;
         }
         
@@ -916,6 +919,7 @@
         }
         
         .footer-logo {
+            font-family: var(--secondary-font);
             font-style: normal;
             font-weight: 800;
             font-size: 18px;
@@ -938,7 +942,6 @@
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: var(--secondary-text-color);
-            margin-bottom: 72px;
             text-align: left;
         }
         
@@ -960,9 +963,10 @@
             }
         }
         
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1157px) {
             .footer-left-part {
                 margin-right: 24px;
+                margin-bottom: 72px;
             }
         }
         
@@ -1064,6 +1068,7 @@
             line-height: 1.5;
             letter-spacing: 0.04em;
             color: var(--white-color);
+            border: none;
             transition-property: background-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
